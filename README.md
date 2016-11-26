@@ -18,45 +18,11 @@ This is a fully-functional [functional][5] lexicographic permutation [generator]
     npm run test
 
 ## Usage
-(This also solves [problem 24][3].)
+(This also solves problems [18][3] and [67][5].)
 
 ```javascript
 #!/usr/bin/env node
-
-const lexicographer = require('lexicographer');
-const array = [...Array(10).keys()];
-const breakpoint = 1000000;
-let permutations = 0;
-
-for (let value of lexicographer.permute(array)) {
-    permutations++;
-
-    if (permutations === breakpoint) {
-        console.log(value.join(''));
-        break;
-    }
-}
-```
-
-## Copyright
-
-Copyright (c) 2016 [Mark Grealish][10]. See [LICENSE](LICENSE) for details.
-
-[1]: https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order "Permutation: Generation in lexicographic order"
-[2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function* "function*"
-[3]: https://projecteuler.net/problem=24 "Problem 24"
-[4]: https://www.bhalash.com/archives/13544792394 "Project Euler Problem 24"
-[5]: https://en.wikipedia.org/wiki/Functional_programming "Functional programming"
-[6]: test/test.js
-[7]: lexicographer.js
-[8]: #usage
-[9]: README.md
-[10]: project_euler_solution.js
-[11]: https://www.bhalash.com
-#!/usr/bin/env node
-/* eslint no-console: "off" */
-
-const triangle = require('./');
+const triangutron = require('triangutron');
 const fs = require('fs');
 
 const eighteen = `
@@ -84,3 +50,20 @@ fs.readFile('./p067_triangle.txt', 'utf8', (_, data) => {
 
 // Solution for problem #18.
 console.log(triangle.max(triangle.fromString(eighteen)));
+```
+
+## Copyright
+
+Copyright (c) 2016 [Mark Grealish][10]. See [LICENSE](LICENSE) for details.
+
+[1]: https://en.wikipedia.org/wiki/Permutation#Generation_in_lexicographic_order "Permutation: Generation in lexicographic order"
+[2]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function* "function*"
+[3]: https://projecteuler.net/problem=24 "Problem 24"
+[4]: https://www.bhalash.com/archives/13544792394 "Project Euler Problem 24"
+[5]: https://en.wikipedia.org/wiki/Functional_programming "Functional programming"
+[6]: test/test.js
+[7]: lexicographer.js
+[8]: #usage
+[9]: README.md
+[10]: project_euler_solution.js
+[11]: https://www.bhalash.com

@@ -1,11 +1,22 @@
 {
-  "name": "trianlges",
+  "name": "triangutron",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![Build Status](https://travis-ci.org/bhalash/lexicographer.svg?branch=master)](https://travis-ci.org/bhalash/lexicographer) [![devDependencies Status](https://david-dm.org/bhalash/lexicographer/dev-status.png)](https://david-dm.org/bhalash/lexicographer?type=dev)",
   "main": "trianlge.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --harmony test/test.js"
   },
   "author": "Mark Grealish <mark@bhalash.com> (https://www.bhalash.com)",
-  "license": "ISC"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhalash/triangutron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhalash/triangutron/issues"
+  },
+  "homepage": "https://github.com/bhalash/triangutron#readme"
 }
