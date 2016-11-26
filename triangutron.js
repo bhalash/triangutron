@@ -1,5 +1,6 @@
-const Triangutron = function() {};
+'use strict';
 
+const Triangutron = function() {};
 const DEFAULT_SIZE = 3;
 const DEFAULT_MULTIPLIER = 100;
 
