@@ -53,9 +53,7 @@ Triangle.prototype.create = function(size) {
         size = DEFAULT_SIZE;
     }
 
-    return [...Array(size)].map(() => {
-        return [...Array(size--)].map(random);
-    }).reverse();
+    return [...Array(size)].map(() => [...Array(size--)].map(random)).reverse();
 };
 
 /**
@@ -64,6 +62,7 @@ Triangle.prototype.create = function(size) {
  * The trim and filter removes any leading and trailing empty cells caused by
  * spaces or errant newlines.
  *
+ * @public
  * @param {string} string - String to parse.
  * @param {array} - String parsed into triangle.
  */
