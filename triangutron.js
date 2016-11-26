@@ -1,4 +1,4 @@
-const Triangle = function() {};
+const Triangutron = function() {};
 
 const DEFAULT_SIZE = 3;
 const DEFAULT_MULTIPLIER = 100;
@@ -44,11 +44,11 @@ function reduceMax(lastRow, row) {
  *
  * @public
  * @requires triangles:random
- * @param {number} size - Triangle size.
+ * @param {number} size - Triangutron size.
  * @return {array} - Multidimensional triangle array.
  */
 
-Triangle.prototype.create = function(size) {
+Triangutron.prototype.create = function(size) {
     if (!Number.isInteger(size)) {
         size = DEFAULT_SIZE;
     }
@@ -67,7 +67,7 @@ Triangle.prototype.create = function(size) {
  * @param {array} - String parsed into triangle.
  */
 
-Triangle.prototype.fromString = function(string) {
+Triangutron.prototype.fromString = function(string) {
     let parsed = string.trim().split('\n').map(row => row.trim().split(' ').map(parseFloat));
     return parsed.filter(row => row.every(Number.isInteger));
 };
@@ -82,13 +82,13 @@ Triangle.prototype.fromString = function(string) {
  *
  * @public
  * @requires triangles:reduceMax
- * @param {array} triangle - Triangle to test.
+ * @param {array} triangle - Triangutron to test.
  * @return {number} max - Maximum path value.
  */
 
-Triangle.prototype.max = function(triangle) {
+Triangutron.prototype.max = function(triangle) {
     let inverted = triangle.slice().reverse();
     return inverted.slice(1).reduce(reduceMax, inverted[0])[0];
 };
 
-module.exports = Object.create(Triangle.prototype);
+module.exports = Object.create(Triangutron.prototype);
