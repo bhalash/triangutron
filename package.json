@@ -1,8 +1,8 @@
 {
   "name": "triangutron",
   "version": "1.0.0",
-  "description": "[![Build Status](https://travis-ci.org/bhalash/lexicographer.svg?branch=master)](https://travis-ci.org/bhalash/lexicographer) [![devDependencies Status](https://david-dm.org/bhalash/lexicographer/dev-status.png)](https://david-dm.org/bhalash/lexicographer?type=dev)",
-  "main": "trianlge.js",
+  "description": "Triangutron is a functionally-programmed max-path-value solver for Project Euler's eighteenth and sixty-seventh problems.",
+  "main": "triangutron.js",
   "scripts": {
     "test": "node --harmony test/test.js"
   },
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/bhalash/triangutron/issues"
   },
-  "homepage": "https://github.com/bhalash/triangutron#readme"
+  "homepage": "https://github.com/bhalash/triangutron#readme",
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
 }
