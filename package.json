@@ -1,7 +1,7 @@
 {
   "name": "triangutron",
-  "version": "1.0.3",
-  "description": "Triangutron is a functionally-programmed max-path-value solver for Project Euler's eighteenth and sixty-seventh problems.",
+  "version": "1.0.4",
+  "description": "A max-path-value solver for Project Euler's eighteenth and sixty-seventh problems, because I got bored.",
   "main": "triangutron.js",
   "scripts": {
     "test": "node --harmony test/test.js"

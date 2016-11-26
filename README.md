@@ -5,7 +5,7 @@ Triangutron is a functionally-programmed max-path-value solver for Project Euler
 
 The two problems require the triangle be reduced to a single maximum value in an efficient manner. This code does so by reducing the triangle from the last row to the first, increasing the max value as it ascends.
 
-If you ever get bored, you can also generate your own triangles of arbitrary-side.
+If you ever get bored, you can also generate your own triangles of arbitrary-size. A 100-row triangle? Psh! What about 5000 rows?
 
 ## Installation
 
