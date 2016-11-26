@@ -69,7 +69,7 @@ Triangutron.prototype.create = function(size) {
  */
 
 Triangutron.prototype.fromString = function(string) {
-    let parsed = string.trim().split('\n').map(row => row.trim().split(' ').map(parseFloat));
+    const parsed = string.trim().split('\n').map(row => row.trim().split(' ').map(parseFloat));
     return parsed.filter(row => row.every(Number.isInteger));
 };
 
@@ -88,7 +88,7 @@ Triangutron.prototype.fromString = function(string) {
  */
 
 Triangutron.prototype.max = function(triangle) {
-    let inverted = triangle.slice().reverse();
+    const inverted = triangle.slice().reverse();
     return inverted.slice(1).reduce(reduceMax, inverted[0])[0];
 };
 
