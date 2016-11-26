@@ -50,6 +50,8 @@ function reduceMax(lastRow, row) {
  */
 
 Triangutron.prototype.create = function(size) {
+    size = Math.abs(size);
+
     if (!Number.isInteger(size)) {
         size = DEFAULT_SIZE;
     }
