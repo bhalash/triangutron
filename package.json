@@ -1,6 +1,6 @@
 {
   "name": "triangutron",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A max-path-value solver for Project Euler's eighteenth and sixty-seventh problems, because I got bored.",
   "main": "triangutron.js",
   "scripts": {
