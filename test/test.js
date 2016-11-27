@@ -47,10 +47,15 @@ tape('fromString()', assert => {
  */
 
 tape('create()', assert => {
-    assert.plan(17);
+    assert.plan(21);
 
     assert.equal(typeof triangutron.create, 'function');
     assert.equal(triangutron.create(5).length, 5);
+    assert.equal(triangutron.create().length, 3);
+
+    assert.throws(() => triangutron.create('ponies'), /^Invalid value 'ponies' supplied for triangle size.$/);
+    assert.throws(() => triangutron.create('-3'), /^Invalid value '-3' supplied for triangle size.$/);
+    assert.throws(() => triangutron.create('0'), /^Invalid value '0' supplied for triangle size.$/);
 
     triangutron.create(5).forEach((row, index) => {
         assert.true(Array.isArray(row));

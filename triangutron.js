@@ -50,10 +50,10 @@ function reduceMax(lastRow, row) {
  */
 
 Triangutron.prototype.create = function(size) {
-    size = Math.abs(size);
-
-    if (!Number.isInteger(size)) {
+    if (!size) {
         size = DEFAULT_SIZE;
+    } else if (!Number.isInteger(size) || size < 1) {
+        throw `Invalid value '${size}' supplied for triangle size.`;
     }
 
     return [...Array(size)].map(() => [...Array(size--)].map(random)).reverse();
